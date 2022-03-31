@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* font-family: 'Old Standard TT', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 9%;
+}
+/* ------------------ header--- */
+#header{
+   background: #ddd;
+}
+.header-content{
+    text-align: center;
+    align-items: center;
+}
+.header-content h2{
+    color: #000;
+    font-size: 25px;
+    padding: 5px 0;
+    letter-spacing: 10px;
+    font-family: 'Old Standard TT', serif;
+}
+.header-content h2 sup{
+    color: red;
+    font-size: 40px;
+}
+#header .container{
+    background: #ddd;
+}
+.banner{
+    background: url(../images/5066096.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    width: 100%;
+    height: 100vh;
+}
+/* ----------------- service  */
+.service-area{
+    background: #17C1A4;
+    padding: 85px 0;
+    overflow: hidden;
+}
+.heading-title{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.heading-title h2{
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 40px;
+}
+.heading-title h2:after{
+    content: '';
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #14a58c;
+    position: absolute;
+    bottom: -10px;
+    left: 43%;
+}
+.heading-title p{
+    color: #fff;
+    padding-top: 30px;
+    font-size: 16px;
+}
+.service-content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-item{
+    width: 23.5%;
+}
+.service-item img{
+    width: 35%;
+    text-align: center;
+    align-items: center;
+}
+.service-item h5{
+    margin-top: 30px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #fff;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.service-item p{
+    color: #fff;
+    width: 80%;
+    
+}
+/* --------------------- Service End  */
+/* ------------------------------- team start  */
+.team-area{
+    background: lightblue;
+    padding: 85px 0;
+}
+.team-area .heading-title{
+    width: 60%;
+}
+.team-area .heading-title h2{
+    color: #000;
+    text-transform: uppercase;
+}
+.team-area .heading-title p{
+    color: #000;
+}
+.team-area .heading-title h2:after{
+    background: #C7D8E2;
+}
+
+
+.team-content{
+   transition: .5s;
+   padding-top: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.team-content:hover{
+   
+}
+.team-item{
+   position: relative;
+   overflow: hidden;
+   width: 23.5%;
+}
+.team-item img{
+   border-radius: 20px;
+   transition: .5s;
+   margin: 10px;
+}
+.team-item img:hover{
+   transform: scale(1.1);
+}
+.team-overlay{
+   background: rgba(0, 0, 0, .5);
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   transition: all .5s;
+
+}
+.team-item:hover .team-overlay{
+   top: 0;
+}
+.team-info{
+   text-align: center;
+}
+.team-info h5{
+   color: orange;
+   text-transform: uppercase;
+   transform: translateX(10%);
+   font-size: 17px;
+   transition: all .5s;
+}
+.team-info h5:hover{
+   color: #fff;
+}
+.team-info ul{
+   display: flex;
+   justify-content: center;
+}
+.team-info ul li{
+   padding: 0px 3px;
+
+}
+.team-info ul li a{
+   display: block;
+   color: orange;
+   font-size: 30px;
+   padding: 7px;
+   transition: .5s;
+}
+.team-info ul li a:hover{
+   color: #ddd;
+   transform: scale(1.2);
+}
+
+
+.love{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+.love a{
+   color: red;
+   font-size: 30px;
+   transition: all .5s;
+}
+.love a:hover{
+   color: orange;
+   transform: scale(1.2);
+}
+
+
+
+/* ------------------------------- team End  */
+
+/* ---------------------- contact start  */
+#contact-area{
+	background: #40739e;
+	padding: 30px 0;
+}
+.form-area{
+	width: 50%;
+	margin: 50px auto;
+}
+.user{
+	margin: auto;
+    width: 50;
+}
+.user input{
+	background: transparent;
+	width: 100%;
+}
+.user .a input{
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+.user .a label{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.user label{
+	color: #fff;
+	font-size: 20px;
+	padding-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.name input{
+	width: 100%;
+}
+.msg{
+	color: #fff;
+
+}
+.msg label{
+	font-size: 20px;
+	padding-left: 10px;
+}
+.msg textarea{
+
+    width: 100%;
+}
+.submit{
+	
+}
+.submit button{
+	background: #00a8ff;
+	padding: 10px 40px;
+    margin-top: 10px;
+
+}
+/* ---------------------- contact end  */
